@@ -52,13 +52,46 @@
 // }
 
 //======================================for statement==================================================//
-const nama = ["Nabiil", "Rafiq", "Akmali", "Hasan"];
+// const nama = ["Nabiil", "Rafiq", "Akmali", "Hasan"];
 
-let i = 0;
-let len = nama.length;
-let text = "";
+// let i = 0;
+// let len = nama.length;
+// let text = "";
 
-for (; i < len;) {
-    console.log(text + nama[i]) + "<br>"
-    i++;
+// for (; i < len;) {
+//     console.log(text + nama[i]) + "<br>"
+//     i++;
+// }
+
+//======================================while, do while===============================================//
+// const nama = ["Nabiil", "Rafiq", "Akmali", "Hasan"];
+// let i = 0;
+// let text = "";
+
+// while (nama[i]) {
+//     console.log(text + nama[i]);
+//     i++;
+// }
+
+// let text = ""
+// let i = 1;
+
+// do {
+//     alert(text + "Web Ini Akan Terbuka Dalam " + i);
+//     i++;
+// }
+// while (i <= 3);
+
+//======================================function===================================================//
+function coba(n, f) {
+    if (f === 0) {
+        throw new Error("Karena Dibagi 0");
+    }
+    return n / f;
+}
+try {
+    let hasil = coba(5, 0);
+    console.log("Hasilnya = " + hasil);
+} catch (error) {
+    console.error("" + error);
 }
